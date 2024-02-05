@@ -1,21 +1,18 @@
 #!/bin/bash
 # Bash Color Basics: Coloring Text with Escape Sequences
-BL=$(echo "\033[01;36m") # Cyan foreground
-RD=$(echo "\033[01;31m") # Red foreground
-GN=$(echo "\033[1;32m") # Green foreground
-CL=$(echo "\033[m") # Default, No Color
+source "$(dirname "$0")/colors.ext"
 
 # Abort, no parameter provided
 abort() {
-  echo -e "${RD}[Abort]${GN} No parameter specified, try e.g.:${CL}\n${CL} sh ssh-keygen.sh id_rsa_backup_via_ssh${CL}"
+  echo -e "$PRINT_ERROR No parameter specified, try e.g.:\n$BOLD bash ssh-keygen.sh id_rsa_backup_via_ssh$NO_COLOR"
   exit 1
 }
 
 # Detecting the user's home directory
 SSH_DIR="$HOME/.ssh"
-
 [ -z "$1" ] && abort
-echo "${BL}[Info]${GN} Generating Key In:${CL} $SSH_DIR/$1"
+
+echo -e "$PRINT_INFO Generating Key In: $SSH_DIR/$1"
 ssh-keygen -t rsa -b 4096 -f "$SSH_DIR/$1" -C "$(whoami)@$(hostname -f)" -q -N ""
 
 # Set directory permissions
@@ -25,6 +22,6 @@ chmod 700 $SSH_DIR
 chmod 600 $SSH_DIR/$1
 chmod 644 $SSH_DIR/$1.pub
 
-echo "${BL}[Info]${GN} Don't forget to copy the SSH key to your remote server${CL}"
-echo "${BL}[Info]${GN} As shown below, this is just an example.${CL}"
-echo "${CL} ssh-copy-id -i $HOME/.ssh/$1.pub user@host${CL}"
+echo -e "$PRINT_INFO Don't forget to copy the SSH key to your remote server"
+echo -e "$PRINT_INFO As shown below, this is just an example e.g.:"
+echo -e "$BOLD ssh-copy-id -i $HOME/.ssh/$1.pub user@host$NO_COLOR"
