@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# Bash Color Basics: Coloring Text with Escape Sequences
 BL=$(echo "\033[01;36m") # Cyan foreground
 RD=$(echo "\033[01;31m") # Red foreground
 GN=$(echo "\033[1;32m") # Green foreground
