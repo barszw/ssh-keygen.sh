@@ -7,7 +7,7 @@ CL=$(echo "\033[m") # Default, No Color
 
 # Abort, no parameter provided
 abort() {
-  echo -e "${RD}[Abort]${GN} no parameter specified, try e.g.:${CL}\n${CL} sh ssh-keygen.sh id_rsa_backup_via_ssh${CL}"
+  echo -e "${RD}[Abort]${GN} No parameter specified, try e.g.:${CL}\n${CL} sh ssh-keygen.sh id_rsa_backup_via_ssh${CL}"
   exit 1
 }
 
