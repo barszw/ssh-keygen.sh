@@ -18,7 +18,7 @@ ssh-keygen -t rsa -b 4096 -f "$SSH_DIR/$1" -C "$(whoami)@$(hostname -f)" -q -N "
 
 # Set public/private key permissions
 chmod 600 $SSH_DIR/$1
-chmod 600 $SSH_DIR/$1.pub
+chmod 644 $SSH_DIR/$1.pub
 
 echo "-===== Don't forget to copy the SSH key to your remote server =====-"
 echo "-============ As shown below, this is just an example. ============-"
