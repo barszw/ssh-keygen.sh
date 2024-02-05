@@ -53,5 +53,5 @@ sh ssh-keygen.sh id_rsa_backup_via_ssh
     </tr>
     </tbody>
     </table>
-    <p>All the man page quotes are from <a href="http://linuxcommand.org/lc3_man_pages/ssh1.html" rel="noreferrer">http://linuxcommand.org/lc3_man_pages/ssh1.html</a></p>
+    <p>All the man page quotes are from <a href="https://linuxcommand.org/lc3_man_pages/ssh1.html" rel="noreferrer">https://linuxcommand.org/lc3_man_pages/ssh1.html</a></p>
 </details>
