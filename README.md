@@ -7,7 +7,7 @@ chmod +x ssh-keygen.sh
 # Execute scripts
 sh ssh-keygen.sh id_rsa_backup_via_ssh
 
-#Setting permissions based on quotations from the manual pages (link at the end):
+# Setting permissions based on quotations from the manual pages (link at the end):
 <div class="s-table-container">
 <table class="s-table">
 <thead>
