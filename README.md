@@ -7,11 +7,9 @@ chmod +x ssh-keygen.sh
 # Execute scripts
 sh ssh-keygen.sh id_rsa_backup_via_ssh
 
+# Knowledge
 <details>
-    <summary>Knowledge</summary>
-    <br>
     <summary>"Setting permissions based on quotations from the manual pages !"</summary>
-    <ul>
 	<li>
 	<div class="s-table-container">
 	<table class="s-table">
@@ -59,5 +57,4 @@ sh ssh-keygen.sh id_rsa_backup_via_ssh
 	</div>
 	<p>All the man page quotes are from <a href="http://linuxcommand.org/lc3_man_pages/ssh1.html" rel="noreferrer">http://linuxcommand.org/lc3_man_pages/ssh1.html</a></p>
 	</li>
-    </ul>
 </details>
