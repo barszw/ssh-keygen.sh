@@ -9,7 +9,7 @@ sh ssh-keygen.sh id_rsa_backup_via_ssh
 
 # Knowledge
 <details>
-    <summary>"Setting permissions based on quotations from the manual pages !"</summary>
+    <summary>Setting permissions based on quotations from the manual pages !</summary>
     <br>
     <table class="s-table">
     <thead>
