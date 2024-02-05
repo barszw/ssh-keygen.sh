@@ -8,10 +8,10 @@ chmod +x ssh-keygen.sh
 sh ssh-keygen.sh id_rsa_backup_via_ssh
 
 <details>
-    <summary></summary></summary>
+    <summary>Knowledge</summary>
     <br>
+    <summary>"Setting permissions based on quotations from the manual pages !"</summary>
     <ul>
-	<summary>"Setting permissions based on quotations from the manual pages !"</summary>
 	<li>
 	<div class="s-table-container">
 	<table class="s-table">
