@@ -10,12 +10,13 @@ if test -t 1; then
     BOLD='\e[1m'
     NO_COLOR='\e[0m'
 
-    PRINT_INFO="${CYAN}[INFO]${NO_COLOR}"
-    PRINT_INPUT="${BOLD}[INPUT]${NO_COLOR}"
-    PRINT_OK="${GREEN}${BOLD}[OK]${NO_COLOR}"
-    PRINT_ERROR="${RED}${BOLD}[ERROR]${NO_COLOR}"
-    PRINT_DATE="${RED}${BOLD}[$Date_String]${NO_COLOR}"
-    PRINT_TIME="${RED}${BOLD}[$Time_String]${NO_COLOR}"
+    PRINT_INFO="${NO_COLOR}${CYAN}[INFO]${NO_COLOR}"
+    PRINT_INFO_TXT="${NO_COLOR}${CYAN}[INFO]${GREEN}"
+    PRINT_INPUT="${NO_COLOR}${BOLD}[INPUT]${NO_COLOR}"
+    PRINT_OK="${NO_COLOR}${GREEN}${BOLD}[OK]${NO_COLOR}"
+    PRINT_ERROR="${NO_COLOR}${RED}${BOLD}[ERROR]${NO_COLOR}"
+    PRINT_DATE="${NO_COLOR}${RED}${BOLD}[$Date_String]${NO_COLOR}"
+    PRINT_TIME="${NO_COLOR}${RED}${BOLD}[$Time_String]${NO_COLOR}"
 else
  # The output is to a file, we don't need colorsw
     GREEN="";CYAN="";RED="";BOLD="";NOCOLOR=""
