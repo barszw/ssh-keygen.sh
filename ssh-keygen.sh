@@ -7,7 +7,7 @@ function header_info() {
 header_info
 
 # Bash Color Basics: Coloring Text with Escape Sequences
-source "$(dirname "$0")/colors.ext"
+source "$(dirname "$0")/bash_color.conf"
 
 # Abort, no parameter provided
 abort() {
