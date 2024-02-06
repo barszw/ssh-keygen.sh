@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# If you have problem, use this #!/bin/bash
 
 function header_info() {
   clear
